@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+    <button><a href="index.html">Voltar para a lista de Atividades</a></button>
+</head>
+<body>
+    <p id="humor">Como você está?</p>
+
+    <button onclick="feliz()">Feliz</button>
+    <button onclick="triste()">Triste</button>
+</body>
+</html>
+
+<script>
+function feliz(){
+    document.body.style.backgroundColor = "yellow";
+    document.getElementById("humor").innerText = "Estou feliz!";
+}
+function triste(){
+    document.body.style.backgroundColor = "gray";
+    document.getElementById("humor").innerText = "Estou triste!";
+}
+</script>

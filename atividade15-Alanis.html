@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 15</title>
+    <button><a href="index.html">Voltar para a lista de Atividades</a></button>
+</head>
+<body>
+    <p id="txt">Passe o mouse</p>
+</body>
+</html>
+
+<script>
+let t = document.getElementById("txt");
+
+t.onmouseover = () => t.style.color = "red";
+t.onmouseout = () => t.style.color = "black";
+</script>
+
+<style>
+    #txt{
+        font-size: 30px;
+        text-align: center;
+    }
+</style>

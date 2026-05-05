@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 19</title>
+    <button><a href="index.html">Voltar para a lista de Atividades</a></button>
+</head>
+
+<body>
+
+<div id="box" style="width:50px;height:50px;background:red;position:absolute;"></div>
+
+</body>
+</html>
+
+<script>
+let x = 0;
+
+setInterval(function(){
+    x += 5;
+    document.getElementById("box").style.left = x + "px";
+}, 100);
+</script>

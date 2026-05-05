@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 34</title>
+    <button><a href="index.html">Voltar para a lista de Atividades</a></button>
+</head>
+
+<body>
+
+<p id="tempo">10</p>
+
+<script>
+let t = 10;
+
+let contador = setInterval(function(){
+    t--;
+    document.getElementById("tempo").innerText = t;
+
+    if(t == 0){
+        clearInterval(contador);
+        alert("O tempo acabou!");
+    }
+}, 1000);
+</script>
+
+</body>
+</html>

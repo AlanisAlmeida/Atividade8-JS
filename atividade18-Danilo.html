@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 18</title>
+    <button><a href="index.html">Voltar para a lista de Atividades</a></button>
+</head>
+
+<body>
+
+<p id="texto">Texto com fonte maluca!</p>
+
+<button onclick="mudarFonte()">Mudar fonte</button>
+
+</body>
+</html>
+
+<script>
+function mudarFonte(){
+    let fontes = ["Arial", "Courier New", "Georgia", "Verdana"];
+
+    let aleatoria = Math.floor(Math.random() * fontes.length);
+
+    document.getElementById("texto").style.fontFamily = fontes[aleatoria];
+}
+</script>

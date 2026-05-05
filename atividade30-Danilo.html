@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 30</title>
+    <button><a href="index.html">Voltar para a lista de Atividades</a></button>
+</head>
+
+<body>
+
+<div onclick="clicar(this)">?</div>
+<div onclick="clicar(this)">?</div>
+<br>
+<div onclick="clicar(this)">?</div>
+<div onclick="clicar(this)">?</div>
+
+<script>
+let valores = ["😀","😀","😎","😎"];
+valores.sort(() => Math.random() - 0.5);
+
+let primeiro = null;
+let segundo = null;
+
+function clicar(el){
+    let i = Array.from(document.querySelectorAll("div")).indexOf(el);
+
+    el.innerHTML = valores[i];
+
+    if(primeiro == null){
+        primeiro = el;
+    }else{
+        segundo = el;
+
+        if(primeiro.innerHTML != segundo.innerHTML){
+            setTimeout(function(){
+                primeiro.innerHTML = "?";
+                segundo.innerHTML = "?";
+            }, 500);
+        }
+
+        primeiro = null;
+        segundo = null;
+    }
+}
+</script>
+
+</body>
+</html>

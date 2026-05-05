@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 31</title>
+    <button><a href="index.html">Voltar para a lista de Atividades</a></button>
+</head>
+
+<body>
+
+<script>
+let p = prompt("Peso");
+let a = prompt("Altura");
+
+let imc = p/(a*a);
+
+if(imc < 18.5){
+   alert(imc += " - Abaixo do peso");
+}
+if(imc >= 18.5 && imc < 25){
+    alert(imc += " - Peso normal");
+}
+if(imc >= 25 && imc < 30){
+    alert(imc += " - Sobrepeso");
+}
+
+
+</script>
+
+</body>
+</html>
